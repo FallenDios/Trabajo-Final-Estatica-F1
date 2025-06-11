@@ -1,3 +1,13 @@
+ /*Fuente*/
+ @font-face {
+  font-family: "F1";
+  src: url();
+ }
+ 
+ 
+ 
+ 
+ 
  body {
       font-family: Arial, sans-serif;
       margin: 0;
