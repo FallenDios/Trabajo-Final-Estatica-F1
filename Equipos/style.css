@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Formula1-Regular';
+  src: url('/F1\ Font/Formula1-Regular.woff2') format('woff2'),
+       url('/F1\ Font/Formula1-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Formula1-Bold';
+  src: url('/F1\ Font/Formula1-Bold.woff2') format('woff2'),
+       url('/F1\ Font/Formula1-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Formula1-Wide';
+  src: url('/F1\ Font/Formula1-Wide.woff2') format('woff2'),
+       url('/F1\ Font/Formula1-Wide.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: 'Formula1-Bold', sans-serif;
+  font-size: 2.5rem;
+  color: #000000;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+
+
 .teams-container {
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +63,7 @@
 .card-equipo h2 {
   margin: 1rem 0 0.5rem;
   font-size: 1.25rem;
-  color: #d32f2f;
+  color: #000000;
   text-align: center;
 }
 
