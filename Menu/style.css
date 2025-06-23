@@ -1,0 +1,52 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cards de noticias */
+.noticias-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.card-noticia {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-noticia:hover {
+    transform: scale(1.03);
+}
+
+.card-noticia h3 {
+    margin-top: 0;
+    color: #d40000;
+}
+
+.card-noticia a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.card-noticia a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .noticias-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
