@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circuitos F1 2025</title>
+  <link rel="stylesheet" href="style.css" /> <!-- CSS principal -->
+  <link rel="stylesheet" href="/Circuitos/circuitos.css" /> <!-- CSS de circuitos -->
+  <script defer src="/Circuitos/circuitos.js"></script>
+</head>
+<body>
+  <header>
+    <img src="/LOGO F1/icons8-formula-1.svg" alt="Logo F1 2025" class="logo" />
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipos.html">Equipos</a></li>
+        <li><a href="./Pilotos/Pilotos.html">Pilotos</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="leyendas.html">Leyendas</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Circuitos del Campeonato Mundial de F1 2025</h2>
+    <section class="circuitos-container">
+      <!-- Ejemplo de card de circuito -->
+      <article class="card-circuito">
+        <img src="/Circuitos/australia-mesa-de-trabajo-1-67b851069356b.avif" alt="Circuito de Albert Park" />
+        <div class="info-circuito">
+          <h2>Gran Premio de Australia</h2>
+          <p><strong>Fecha:</strong> 14 al 16 de marzo</p>
+          <p><strong>Longitud:</strong> 5.303 km</p>
+          <p><strong>Curvas:</strong> 16</p>
+          <p><strong>Tipo:</strong> Urbano</p>
+          <button class="btn-resultados" data-circuito="australia">Ver resultados</button>
+          <div class="resultados hidden" id="res-australia">
+            <!-- Aquí se mostrarán los resultados vía JS -->
+            <p>Resultados del Gran Premio de Australia:</p>
+            <ul>
+              <li>1. Lando Norris - McLaren</li>
+              <li>2. Max Verstappen - Red Bull</li>
+              <li>3. George Russell - Mercedes</li>
+          </div>
+        </div>
+      </article>
+      <!-- Repetir para otros circuitos -->
+        <!-- 2: China -->
+  <article class="card-circuito">
+    <img src="/Circuitos/china-mesa-de-trabajo-1-67b85173c94cc.avif" alt="Circuito de Shanghai" />
+    <div class="info-circuito">
+      <h2>Gran Premio de China (Shanghai)</h2>
+      <p><strong>Fecha:</strong> 21‑23 marzo</p>
+      <p><strong>Longitud:</strong> 5.451 km</p>
+      <p><strong>Curvas:</strong> 14</p>
+      <p><strong>Tipo:</strong> Permanente</p>
+      <button class="btn-resultados" data-circuito="china">Ver resultados</button>
+      <div class="resultados hidden" id="res-china"></div>
+    </div>
+  </article>
+
+  <!-- 3: Japón -->
+  <article class="card-circuito">
+    <img src="/Circuitos/japon-mesa-de-trabajo-1-67b851c64b19b.avif" alt="Circuito de Suzuka" />
+    <div class="info-circuito">
+      <h2>Gran Premio de Japón (Suzuka)</h2>
+      <p><strong>Fecha:</strong> 4‑6 abril</p>
+      <p><strong>Longitud:</strong> 5.807 km</p>
+      <p><strong>Curvas:</strong> 18</p>
+      <p><strong>Tipo:</strong> Permanente</p>
+      <button class="btn-resultados" data-circuito="japon">Ver resultados</button>
+      <div class="resultados hidden" id="res-japon"></div>
+    </div>
+  </article>
+
+  <!-- 4: Bahréin -->
+  <article class="card-circuito">
+    <img src="/Circuitos/bhare-in-mesa-de-trabajo-1-mesa-de-trabajo-1-67b86cfed7220.avif" alt="Circuito de Sakhir" />
+    <div class="info-circuito">
+      <h2>Gran Premio de Bahréin (Sakhir)</h2>
+      <p><strong>Fecha:</strong> 11‑13 abril</p>
+      <p><strong>Longitud:</strong> 5.412 km</p>
+      <p><strong>Curvas:</strong> 15</p>
+      <p><strong>Tipo:</strong> Permanente</p>
+      <button class="btn-resultados" data-circuito="bahrein">Ver resultados</button>
+      <div class="resultados hidden" id="res-bahrein"></div>
+    </div>
+  </article>
+
+  <!-- 5: Arabia Saudí -->
+  <article class="card-circuito">
+    <img src="/Circuitos/arabia-saudi-mesa-de-trabajo-1-67b86d33e1784.avif" alt="Circuito de Jeddah" />
+    <div class="info-circuito">
+      <h2>Gran Premio de Arabia Saudí (Jeddah)</h2>
+      <p><strong>Fecha:</strong> 18‑20 abril</p>
+      <p><strong>Longitud:</strong> 6.175 km</p>
+      <p><strong>Curvas:</strong> 27</p>
+      <p><strong>Tipo:</strong> Urbano</p>
+      <button class="btn-resultados" data-circuito="arabia">Ver resultados</button>
+      <div class="resultados hidden" id="res-arabia"></div>
+    </div>
+  </article>
+
+  <!-- 6: Miami -->
+  <article class="card-circuito">
+    <img src="/Circuitos/miami-mesa-de-trabajo-1-67b86d5f0da80.avif" alt="Circuito de Miami" />
+    <div class="info-circuito">
+      <h2>Gran Premio de Miami</h2>
+      <p><strong>Fecha:</strong> 2‑4 mayo</p>
+      <p><strong>Longitud:</strong> 5.412 km</p>
+      <p><strong>Curvas:</strong> 19</p>
+      <p><strong>Tipo:</strong> Permanente</p>
+      <button class="btn-resultados" data-circuito="miami">Ver resultados</button>
+      <div class="resultados hidden" id="res-miami"></div>
+    </div>
+  </article>
+
+  <!-- 7: Emilia‑Romagna (Imola) -->
+  <article class="card-circuito">
+    <img src="/Circuitos/emilia-roman-a-mesa-de-trabajo-1-mesa-de-trabajo-1-67b86db0055da.avif" alt="Circuito de Imola" />
+    <div class="info-circuito">
+      <h2>Gran Premio Emilia‑Romagna (Imola)</h2>
+      <p><strong>Fecha:</strong> 16‑18 mayo</p>
+      <p><strong>Longitud:</strong> 4.909 km</p>
+      <p><strong>Curvas:</strong> 19</p>
+      <p><strong>Tipo:</strong> Permanente</p>
+      <button class="btn-resultados" data-circuito="imola">Ver resultados</button>
+      <div class="resultados hidden" id="res-imola"></div>
+    </div>
+  </article>
+
+  <!-- 8: Mónaco -->
+  <article class="card-circuito">
+    <img src="/Circuitos/monaco-mesa-de-trabajo-1-67b86ddc6464e.avif" alt="Circuito de Mónaco" />
+    <div class="info-circuito">
+      <h2>Gran Premio de Mónaco</h2>
+      <p><strong>Fecha:</strong> 23‑25 mayo</p>
+      <p><strong>Longitud:</strong> 3.337 km</p>
+      <p><strong>Curvas:</strong> 19</p>
+      <p><strong>Tipo:</strong> Urbano</p>
+      <button class="btn-resultados" data-circuito="monaco">Ver resultados</button>
+      <div class="resultados hidden" id="res-monaco"></div>
+    </div>
+  </article>
+
+  <!-- 9: España-->
+    <article class="card-circuito">
+      <img src="/Circuitos/espan-a-mesa-de-trabajo-1-67b86e0891f96.avif" alt="Circuito de Barcelona" />
+      <div class="info-circuito">
+        <h2>Gran Premio de España (Barcelona)</h2>
+        <p><strong>Fecha:</strong> 30 mayo - 1 junio</p>
+        <p><strong>Longitud:</strong> 4.675 km</p>
+        <p><strong>Curvas:</strong> 16</p>
+        <p><strong>Tipo:</strong> Permanente</p>
+        <button class="btn-resultados" data-circuito="espana">Ver resultados</button>
+        <div class="resultados hidden" id="res-espana"></div>
+      </div>
+    </article>
+
+    <!-- 10: Canadá -->
+    <article class="card-circuito">
+      <img src="/Circuitos/canada-mesa-de-trabajo-1-67b86e3973997.avif" alt="Circuito de Montreal" />
+      <div class="info-circuito">
+        <h2>Gran Premio de Canadá (Montreal)</h2>
+        <p><strong>Fecha:</strong> 13‑15 junio</p>
+        <p><strong>Longitud:</strong> 4.361 km</p>
+        <p><strong>Curvas:</strong> 12</p>
+        <p><strong>Tipo:</strong> Permanente</p>
+        <button class="btn-resultados" data-circuito="canada">Ver resultados</button>
+        <div class="resultados hidden" id="res-canada"></div>
+      </div>
+    </article>
+
+    <!-- 11: Austria -->
+    <article class="card-circuito">
+      <img src="/Circuitos/austria-mesa-de-trabajo-1-67b86e81482fa.avif" alt="Circuito de Red Bull Ring" />
+      <div class="info-circuito">
+        <h2>Gran Premio de Austria (Red Bull Ring)</h2>
+        <p><strong>Fecha:</strong> 27‑29 junio</p>
+        <p><strong>Longitud:</strong> 4.318 km</p>
+        <p><strong>Curvas:</strong> 10</p>
+        <p><strong>Tipo:</strong> Permanente</p>
+        <button class="btn-resultados" data-circuito="austria">Ver resultados</button>
+        <div class="resultados hidden" id="res-austria"></div>
+      </div>
+    </article>
+
+    <!-- 12: Gran Bretaña -->
+    <article class="card-circuito">
+      <img src="/Circuitos/gran-bretan-a-mesa-de-trabajo-1-67b86ea87ba21.avif" alt="Circuito de Silverstone" />
+      <div class="info-circuito">
+        <h2>Gran Premio de Gran Bretaña (Silverstone)</h2>
+        <p><strong>Fecha:</strong> 5‑6 julio</p>
+        <p><strong>Longitud:</strong> 5.891 km</p>
+        <p><strong>Curvas:</strong> 18</p>
+        <p><strong>Tipo:</strong> Permanente</p>
+        <button class="btn-resultados" data-circuito="gran-bretana">Ver resultados</button>
+        <div class="resultados hidden" id="res-gran-bretana"></div>
+        </div>
+      </article>
+
+    <!-- 13: Hungría -->
+    <article class="card-circuito">
+      <img src="/Circuitos/hungria-mesa-de-trabajo-1-67b86f0962ae5.avif" alt="Circuito de Hungaroring" />
+      <div class="info-circuito">
+        <h2>Gran Premio de Hungría (Hungaroring)</h2>
+        <p><strong>Fecha:</strong> 25‑27 julio</p>
+        <p><strong>Longitud:</strong> 4.381 km</p>
+        <p><strong>Curvas:</strong> 19</p>
+        <p><strong>Tipo:</strong> Permanente</p>
+        <button class="btn-resultados" data-circuito="hungria">Ver resultados</button>
+        <div class="resultados hidden" id="res-hungria"></div>
+      </div>
+    </article>
+
+    <!-- 14: Bélgica -->
+    <article class="card-circuito">
+      <img src="/Circuitos/belgica-mesa-de-trabajo-1-67b86ed11febb.avif" alt="Circuito de Spa-Francorchamps" />
+      <div class="info-circuito">
+        <h2>Gran Premio de Bélgica (Spa-Francorchamps)</h2>
+        <p><strong>Fecha:</strong> 1‑3 agosto</p>
+        <p><strong>Longitud:</strong> 7.004 km</p>
+        <p><strong>Curvas:</strong> 14</p>
+        <p><strong>Tipo:</strong> Permanente</p>
+        <button class="btn-resultados" data-circuito="belgica">Ver resultados</button>
+        <div class="resultados hidden" id="res-belgica"></div>
+      </div>
+    </article>
+
+    <!-- 15: Países Bajos -->
+    <article class="card-circuito">
+      <img src="/Circuitos/pai-ses-bajos-mesa-de-trabajo-1-mesa-de-trabajo-1-67b86f5680a9b.avif" alt=" Zandvoort, Países Bajos" />
+        <div class="info-circuito">
+            <h2>Gran Premio de Países Bajos (Zandvoort)</h2>
+            <p><strong>Fecha:</strong> 29-31 agosto </p>
+            <p><strong>Longitud:</strong> 4.259 km</p>
+            <p><strong>Curvas:</strong> 14</p>
+            <p><strong>Tipo:</strong> Permanente</p>
+            <button class="btn-resultados" data-circuito="paises-bajos">Ver resultados</button>
+            <div class="resultados hidden" id="res-paises-bajos"></div>
+        </div>
+    </article>
+
+    <!-- 16: Italia -->
+    <article class="card-circuito">
+      <img src="/Circuitos/italia-mesa-de-trabajo-1-67b86f84ae8ae.avif" alt="Circuito de Monza" />
+      <div class="info-circuito">
+        <h2>Gran Premio de Italia (Monza)</h2>
+        <p><strong>Fecha:</strong> 5‑7 septiembre</p>
+        <p><strong>Longitud:</strong> 5.793 km</p>
+        <p><strong>Curvas:</strong> 11</p>
+        <p><strong>Tipo:</strong> Permanente</p>
+        <button class="btn-resultados" data-circuito="italia">Ver resultados</button>
+        <div class="resultados hidden" id="res-italia"></div>
+      </div>
+    </article>
+
+
+    <!-- 17: Azerbaíyan -->
+    <article class="card-circuito">
+      <img src="/Circuitos/azerbaiya-n-mesa-de-trabajo-1-67b86fbdaa2a7.avif" alt="Circuito de Baku" />
+        <div class="info-circuito">
+            <h2>Gran Premio de Azerbaíyan (Baku)</h2>
+            <p><strong>Fecha:</strong> 19‑21 septiembre</p>
+            <p><strong>Longitud:</strong> 6.003 km</p>
+            <p><strong>Curvas:</strong> 20</p>
+            <p><strong>Tipo:</strong> Urbano</p>
+            <button class="btn-resultados" data-circuito="azerbaijan">Ver resultados</button>
+            <div class="resultados hidden" id="res-azerbaijan"></div>
+        </div>
+    </article>
+
+    <!-- 18: Singapur -->
+    <article class="card-circuito">
+      <img src="/Circuitos/singapur-mesa-de-trabajo-1-67b8702920454.avif" alt="Circuito de Marina Bay" />  
+        <div class="info-circuito">
+            <h2>Gran Premio de Singapur (Marina Bay)</h2>
+            <p><strong>Fecha:</strong> 3‑5 octubre</p>
+            <p><strong>Longitud:</strong> 5.063 km</p>
+            <p><strong>Curvas:</strong> 23</p>
+            <p><strong>Tipo:</strong> Urbano</p>
+            <button class="btn-resultados" data-circuito="singapur">Ver resultados</button>
+            <div class="resultados hidden" id="res-singapur"></div>
+        </div>
+    </article>
+
+    <!-- 19: Estados Unidos -->
+    <article class="card-circuito">
+      <img src="/Circuitos/eeuu-mesa-de-trabajo-1-67b87055f357a.avif" alt="Circuito de las Americas" />
+        <div class="info-circuito">
+            <h2>Gran Premio de Estados Unidos (Circuito de las Américas)</h2>
+            <p><strong>Fecha:</strong> 17‑19 octubre</p>
+            <p><strong>Longitud:</strong> 5.513 km</p>
+            <p><strong>Curvas:</strong> 20</p>
+            <p><strong>Tipo:</strong> Permanente</p>
+            <button class="btn-resultados" data-circuito="estados-unidos">Ver resultados</button>
+            <div class="resultados hidden" id="res-estados-unidos"></div>
+        </div>
+    </article>
+
+    <!-- 20: México -->
+    <article class="card-circuito">
+      <img src="/Circuitos/mexico-mesa-de-trabajo-1-67b8707c6502d.avif" alt="Circuito de Mexico City" />
+        <div class="info-circuito">
+            <h2>Gran Premio de México (Mexico City)</h2>
+            <p><strong>Fecha:</strong> 24‑26 octubre</p>
+            <p><strong>Longitud:</strong> 4.304 km</p>
+            <p><strong>Curvas:</strong> 16</p>
+            <p><strong>Tipo:</strong> Urbano</p>
+            <button class="btn-resultados" data-circuito="mexico">Ver resultados</button>
+            <div class="resultados hidden" id="res-mexico"></div>
+        </div>
+    </article>
+
+    <!-- 21: Brasil -->
+    <article class="card-circuito">
+      <img src="/Circuitos/brasil-mesa-de-trabajo-1-67b870b4df780.avif" alt="Circuito de Sao Paulo" />
+        <div class="info-circuito">
+            <h2>Gran Premio de Brasil (Sao Paulo)</h2>
+            <p><strong>Fecha:</strong>  07-09 noviembre</p>
+            <p><strong>Longitud:</strong> 4.309 km</p>
+            <p><strong>Curvas:</strong> 15</p>
+            <p><strong>Tipo:</strong> Urbano</p>
+            <button class="btn-resultados" data-circuito="brasil">Ver resultados</button>
+            <div class="resultados hidden" id="res-brasil"></div>
+        </div>
+    </article>
+
+    <!-- 22: Estados Unidos -->
+    <article class="card-circuito">
+      <img src="/Circuitos/las-vegas-mesa-de-trabajo-1-67b870f548e4e.avif" alt="Circuito de Las Vegas" />
+        <div class="info-circuito">
+            <h2>Gran Premio de Las Vegas</h2>
+            <p><strong>Fecha:</strong> 20‑22 noviembre</p>
+            <p><strong>Longitud:</strong> 6.120 km</p>
+            <p><strong>Curvas:</strong> 17</p>
+            <p><strong>Tipo:</strong> Urbano</p>
+            <button class="btn-resultados" data-circuito="las-vegas">Ver resultados</button>
+            <div class="resultados hidden" id="res-las-vegas"></div>
+        </div>
+    </article>
+
+    <!-- 23: Qatar -->
+    <article class="card-circuito">
+      <img src="/Circuitos/qatar-mesa-de-trabajo-1-67b8712c62575.avif" alt="Circuito de Doha" />
+        <div class="info-circuito">
+            <h2>Gran Premio de Qatar (Doha)</h2>
+            <p><strong>Fecha:</strong> 28‑30 noviembre</p>
+            <p><strong>Longitud:</strong> 5.380 km</p>
+            <p><strong>Curvas:</strong> 16</p>
+            <p><strong>Tipo:</strong> Urbano</p>
+            <button class="btn-resultados" data-circuito="qatar">Ver resultados</button>
+            <div class="resultados hidden" id="res-qatar"></div>
+        </div>
+    </article>
+
+
+    <!--24: Abu Dhabi -->
+    <article class="card-circuito">
+      <img src="/Circuitos/abu-dhabi-mesa-de-trabajo-1-67b8715a14fcb.avif" alt="Circuito de Abu Dhabi" />
+        <div class="info-circuito">
+            <h2>Gran Premio de Abu Dhabi</h2>
+            <p><strong>Fecha:</strong> 05‑07 diciembre</p>
+            <p><strong>Longitud:</strong> 5.554 km</p>
+            <p><strong>Curvas:</strong> 21</p>
+            <p><strong>Tipo:</strong> Urbano</p>
+            <button class="btn-resultados" data-circuito="abu-dhabi">Ver resultados</button>
+            <div class="resultados hidden" id="res-abu-dhabi"></div>
+        </div>
+    </article>
+    </section>
+  </main>
+</body>
+</html>
