@@ -1,0 +1,72 @@
+main.bio-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio-container h1 {
+  text-align: center;
+  color: #d32f2f;
+  font-family: 'Formula1-Bold', sans-serif;
+}
+
+.bio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.bio-grid img {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.bio-info {
+  flex: 2;
+  min-width: 250px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bio-info p {
+  margin: 0.5rem 0;
+}
+
+.bio-historia {
+  margin-top: 2rem;
+}
+
+.bio-historia h2 {
+  font-family: 'Formula1-Bold', sans-serif;
+  color: #333;
+  border-bottom: 2px solid #d32f2f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bio-historia p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .bio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-grid img {
+    max-width: 100%;
+  }
+
+  .bio-info {
+    text-align: center;
+  }
+}
